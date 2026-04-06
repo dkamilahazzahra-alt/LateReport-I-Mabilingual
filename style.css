@@ -1,0 +1,94 @@
+:root {
+    --primary-green: #2d6a4f;    /* Hijau Tua (Botanic) */
+    --medium-green: #40916c;     /* Hijau Sedang */
+    --light-green: #95d5b2;      /* Hijau Muda */
+    --pale-green: #d8f3dc;       /* Hijau Sangat Muda (Background) */
+    --white: #ffffff;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #f0f7f4; /* Background abu kehijauan sangat tipis */
+    color: #1b4332;
+}
+
+/* Navbar dengan Gradient Hijau Tua */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-green) 0%, var(--medium-green) 100%);
+    box-shadow: 0 4px 12px rgba(45, 106, 79, 0.2);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+/* Card Styling */
+.card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(27, 67, 50, 0.05);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    background-color: var(--white);
+    border-bottom: 2px solid var(--pale-green);
+    font-weight: 700;
+    color: var(--primary-green);
+    border-radius: 15px 15px 0 0 !important;
+    padding: 1rem 1.5rem;
+}
+
+/* Jam Digital */
+#liveClock {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--white);
+    background: rgba(255, 255, 255, 0.15);
+    padding: 6px 18px;
+    border-radius: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* Form Input */
+.form-control:focus, .form-select:focus {
+    border-color: var(--medium-green);
+    box-shadow: 0 0 0 0.25rem rgba(64, 145, 108, 0.25);
+}
+
+/* Tombol Utama Hijau */
+.btn-primary {
+    background-color: var(--medium-green);
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-green);
+}
+
+/* Tabel */
+.table thead th {
+    background-color: var(--primary-green);
+    color: var(--white);
+    border: none;
+}
+
+.table-striped > tbody > tr:nth-of-type(odd) {
+    background-color: #e9f5ee; /* Baris selang-seling hijau pucat */
+}
+
+/* Status Badge */
+.badge-status {
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+
+.bg-success { background-color: var(--medium-green) !important; }
+.bg-warning { background-color: #ffc107 !important; color: #000; }
+.bg-danger { background-color: #d90429 !important; }
